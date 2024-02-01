@@ -16,3 +16,23 @@ Example: (Input --> output)
 
 
 // Solution
+
+function formatWords(words){
+  if (!words){
+    return ''
+  }
+  let result = ''
+  words = words.filter(function(word){return !!word;});
+  for(let i = 0;i < words.length;i++){
+    if (!words[i]){
+      continue;
+    }
+    
+    if(result.length > 0)
+      result += i == words.length - 1 ? ' and ' : ', '; 
+          
+    result += words[i]
+  }
+    
+  return result
+}
