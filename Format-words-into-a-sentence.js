@@ -36,3 +36,5 @@ function formatWords(words){
     
   return result
 }
+
+// or
