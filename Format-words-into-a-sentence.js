@@ -13,3 +13,6 @@ Example: (Input --> output)
   ['ninja', '', 'ronin'] --> "ninja and ronin"
   [] -->""
 */
+
+
+// Solution
