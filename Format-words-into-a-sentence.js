@@ -38,3 +38,13 @@ function formatWords(words){
 }
 
 // or
+
+function formatWords(words){
+  if (!(words)) return '';
+  let w = words.filter(function(a) { return a; });
+  if (w.length >= 3) {
+    return w.slice(0, w.length - 1).join(', ') + ' and ' + w[w.length - 1];
+  } else { 
+    return w.join(' and ');
+  }
+}
